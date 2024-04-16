@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    font-family: inherit;
+    line-height: inherit;
+    margin: 0;
+    height: 100%;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
