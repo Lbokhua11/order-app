@@ -1,10 +1,10 @@
 import React from "react";
-import OrderContainer from "@/components/shared/Container/OrderContainer";
+import OrderMain from "@/components/pages/Order/OrderMain";
 
 const OrderPage = ({ params }: { params: { orderId: string } }) => {
   return (
     <>
-      <OrderContainer orderId={params.orderId} />
+      <OrderMain orderId={params.orderId} />
     </>
   );
 };
