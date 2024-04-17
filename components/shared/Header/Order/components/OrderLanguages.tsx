@@ -15,6 +15,15 @@ const OrderLanguages = ({ orderId }: Props) => {
   if (locale === "en") {
     langText = "Eng";
   }
+  if (locale == "ka") {
+    langText = "Geo";
+  }
+  if (locale == "uz") {
+    langText = "Uzb";
+  }
+  if (locale == "ru") {
+    langText = "Rus";
+  }
   const router = useRouter();
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isLangClicked, setIsLangClicked] = useState(false);
@@ -58,7 +67,7 @@ const OrderLanguages = ({ orderId }: Props) => {
         </button>
       </div>
       {isLangClicked && (
-        <div className="bg-[#3E425D] w-[5.6875rem] left-[78.09375rem] top-[3.5rem] p-[0.75rem] rounded-[0.375rem] absolute flex flex-col justify-between">
+        <div className="bg-[#3E425D] w-[5.6875rem] left-[78.09375rem] top-[3.5rem] p-[0.75rem] rounded-[0.375rem] absolute flex flex-col gap-y-[0.75rem]">
           {supportedLanguages
             .filter((language) => language !== locale)
             .map((language) => {
