@@ -19,6 +19,9 @@ const config: Config = {
       screens: {
         400: "400px",
       },
+      height: {
+        "vh-minus-header-footer": "calc(100vh - 8.75rem)",
+      },
     },
   },
   plugins: [],
