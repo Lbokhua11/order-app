@@ -1,8 +1,7 @@
 import React from "react";
 import CitypayIcon from "@/components/icons/Citypay/CitypayIcon";
-import UncheckedIcon from "@/components/icons/Unchecked/UncheckedIcon";
-import CheckedIcon from "@/components/icons/CheckedIcon/CheckedIcon";
-import CheckBox from "@/components/shared/Footer/Order/CheckBox";
+
+import CheckBox from "@/components/shared/Footer/Order/components/CheckBox";
 
 const OrderFooter = () => {
   return (
