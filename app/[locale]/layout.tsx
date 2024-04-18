@@ -4,7 +4,7 @@ import "./globals.css";
 import React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import StoreProvider from "@/app/[locale]/StoreProvider";
-import { useMessages } from "use-intl";
+import { useMessages } from "next-intl";
 
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
