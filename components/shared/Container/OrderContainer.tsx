@@ -1,6 +1,5 @@
 import OrderHeader from "@/components/shared/Header/Order/OrderHeader";
 import OrderFooter from "@/components/shared/Footer/Order/OrderFooter";
-
 import OrderCoins from "@/components/shared/Container/components/OrderCoins";
 interface Props {
   orderId: string;
