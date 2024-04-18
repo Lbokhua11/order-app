@@ -5,7 +5,7 @@ import { useState } from "react";
 const CheckBox = () => {
   const [isChecked, setIsChecked] = useState(false);
   return (
-    <div className="w-[25.063rem] h-[2.75rem] z-10 p-[0.375rem 1.5rem 0.375rem 1.5rem] text-[#B8C1F1] flex items-center ">
+    <div className="w-[25.063rem] h-[2.75rem] z-10 p-[0.375rem 1.5rem 0.375rem 1.5rem] text-[#B8C1F1] flex items-center absolute left-1/2 -translate-x-1/2">
       <Checkbox
         onChange={() => setIsChecked((prev) => !prev)}
         className="1000:w-5 1000:h-5 w-4 h-4"
