@@ -11,9 +11,10 @@ const OrderCoins = () => {
   return (
     <>
       <main className="w-full h-vh-minus-header-footer absolute top-[4rem] overflow-y-hidden">
-        <section className="w-[26rem] h-[36.75rem]  absolute top-[4.75rem] left-1/2 -translate-x-1/2 flex flex-col ">
+        <div className="absolute left-1/2 z-50 -translate-x-1/2 z-1 bottom-0 bg-gradient-to-b from-[#2C304400] to-[#2C3044] w-[26rem] h-[9.25rem]"></div>
+        <section className="w-[26rem] absolute top-[4.75rem] left-1/2 -translate-x-1/2 flex flex-col  ">
           <div className="h-[5.5rem] w-[26rem] bg-[#31344B] rounded-t-[0.625rem] flex items-center relative py-0 px-[1.25rem] border-b border-solid border-gray-700">
-            <div className="w-[21rem] h-[3.5rem]">
+            <div className="w-[21rem] mb-[0.3125rem]">
               <span className="text-[1rem] text-[#E2E5EE]">Your Order:</span>
               <span className="text-[1.5rem] text-[#E2E5EE]"> 44242 </span>
               <span className="text-[0.875rem] text-[#969BB5]">GEL</span> <br />
@@ -25,7 +26,7 @@ const OrderCoins = () => {
               <SearchIcon />
             </div>
           </div>
-          <div className="w-[26rem] bg-[#31344B] py-[1rem] px-[1.25rem] flex flex-col gap-y-[0.75rem]">
+          <div className="w-[26rem] bg-[#31344B] py-[1rem] px-[1.25rem] flex flex-col gap-y-[0.75rem] overflow-y-auto z-50">
             <div className="flex flex-col gap-y-[0.75rem]">
               <span className="text-[#969BB5] text-[1rem]">
                 Payment Methods
@@ -90,7 +91,7 @@ const OrderCoins = () => {
               </div>
             </div>
             <span className="text-[#969BB5] text-[1rem]">Cryptocurrencies</span>
-            <div className="flex flex-col gap-y-[0.75rem] h-[10.5rem] overflow-y-scroll">
+            <div className="flex flex-col gap-y-[0.75rem] h-[10.5rem] ">
               <div
                 className="flex bg-[#3E425D] rounded-[0.625rem] py-[0.625rem] px-[0.625rem] justify-between items-center"
                 onClick={() => {
